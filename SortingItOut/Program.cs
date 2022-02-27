@@ -62,7 +62,7 @@ namespace Sorting_It_Out_Template
 
             for (int i = 0; i < temp; i++)
             {
-                _arrayOfNumbers[i] = rand.Next(max);
+                _arrayOriginal[i] = rand.Next(max);
             }
             _count = temp;
 
@@ -114,6 +114,7 @@ namespace Sorting_It_Out_Template
 
             size = numList.createRnd(10, 100);
             Console.WriteLine("Created List of {0} items", size);
+            numList.refreshList();
             numList.printCells();
             numList.bubbleSort();
             Console.WriteLine("Bubble Sorted:");
