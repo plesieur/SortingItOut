@@ -6,6 +6,7 @@ namespace Sorting_It_Out_Template
     {
         private const int _maxSize = 50;
         private int[] _arrayOfNumbers = new int[_maxSize];
+        private int[] _arrayOriginal = new int[_maxSize];
         private int _count;
         private Random rand;
 
@@ -15,6 +16,7 @@ namespace Sorting_It_Out_Template
             for (int i = 0; i < _maxSize; i++)
             {
                 _arrayOfNumbers[i] = -1;
+                _arrayOriginal[i] = -1;
             }
             rand = new Random();
         }
@@ -32,6 +34,15 @@ namespace Sorting_It_Out_Template
             get
             {
                 return _count;
+            }
+        }
+
+        //Set _arrayOfNumbers to original and prepare to sort 
+        public void refreshList()
+        {
+            for (int i = 0; i < _maxSize; i++)
+            {
+                _arrayOfNumbers[i] = _arrayOriginal[i];
             }
         }
 
