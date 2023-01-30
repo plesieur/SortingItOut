@@ -5,8 +5,8 @@ namespace Sorting_It_Out_Template
     class RndArray
     {
         private const int _maxSize = 50;
-        private int[] _arrayOfNumbers = new int[_maxSize];
-        private int[] _arrayOriginal = new int[_maxSize];
+        private int[] _arrayOfNumbers = new int[_maxSize];  //Array to sort
+        private int[] _arrayOriginal = new int[_maxSize];   //Do NOT touch this array
         private int _count;
         private Random rand;
 
@@ -99,7 +99,9 @@ namespace Sorting_It_Out_Template
 
         public void bubbleSort()
         {
+            // Sort _arrayOfNumbers[] using a Bubble Sort
             Console.WriteLine("**Bubble Sort goes here**");
+
         }
 
     }
