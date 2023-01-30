@@ -5,9 +5,9 @@ namespace Sorting_It_Out_Template
     class RndArray
     {
         private const int _maxSize = 50;
-        private int[] _arrayOfNumbers = new int[_maxSize];  //Array to sort
+        private int[] _arrayOfNumbers = new int[_maxSize];  //Array to be sort
         private int[] _arrayOriginal = new int[_maxSize];   //Do NOT touch this array
-        private int _count;
+        private int _count;                                 //Number of items to sort
         private Random rand;
 
         public RndArray()
